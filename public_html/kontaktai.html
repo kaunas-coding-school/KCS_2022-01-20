@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <title>Kontaktai</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+
+<header>
+    <img src="/public_html/img/logo.png" alt="LOGO"/>
+    <a href="https://google.lt">Google</a> | <a href="https://facebook.com">FB</a> | <a
+        href="https://twiter.com">Twiter</a>
+</header>
+
+<aside>
+    REKLAMA
+</aside>
+
+<main>
+
+    <form action="http://localhost/kursiustiduomenis.php" method="POST">
+        <input name="vardas" type="text" id="fn" placeholder="Vardas">
+
+        <label for="masina">Automobilis</label>
+        <select name="cars" id="masina">
+            <option value="auto1">Volvo</option>
+            <option value="auto2">Saab</option>
+            <option value="kitas3">Fiat</option>
+            <option value="a4">Audi</option>
+        </select>
+
+        <label for="zinute">Tavo Zinute man</label>
+        <textarea name="message" rows="10" cols="30" id="zinute">
+          The cat was playing in the garden.
+        </textarea>
+
+        <button type="button" onclick="alert('Hello World!')">Labas!</button>
+
+        <input value="Siųsti" type="submit"/>
+
+    </form>
+
+</main>
+
+<footer>
+    &copy;2022 Visos teises saugomos
+</footer>
+
+</body>
+</html>
