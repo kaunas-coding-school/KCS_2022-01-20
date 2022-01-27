@@ -1,3 +1,39 @@
-main {
-    /*background-color: red;*/
+* {
+    border: 1px solid darkgray;
+}
+
+html, body, .app  {
+    height: 100%;
+    border: none;
+}
+html {
+    background-color: #e7dddd;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.app > * {
+    background-color: white;
+}
+
+.burger{
+    display: none;
+}
+.burger > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+@media only screen and (max-width: 600px) {
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    header > nav > a {
+        display: none;
+    }
 }
