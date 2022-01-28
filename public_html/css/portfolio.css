@@ -1,0 +1,38 @@
+.app main div {
+    --item-width: calc(100% / 5 - 32px); /* 32px nes 5px*2 puses margin + 10px *2 puses padding + 1px * 2 remelis */
+    --item-height: 150px;
+}
+
+.app main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app main div {
+    width: var(--item-width);
+    height: var(--item-height);
+    margin: 5px;
+    padding: 10px;
+    float: left;
+    background-color: darkgray;
+    text-align: center;
+    line-height: var(--item-height);
+    font-size: 2.5vh;
+}
+
+.app main div:nth-child(5n+1) {
+    clear: both;
+}
+
+.app main div:nth-child(4n+2) {
+    background-color: lightskyblue;
+}
+
+.app main div:nth-child(4n+4) {
+    background-color: darkolivegreen;
+}
+
+.app main div:nth-child(2n+16) {
+    background-color: hotpink;
+}

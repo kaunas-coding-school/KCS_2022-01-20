@@ -10,9 +10,9 @@ html {
     background-color: #e7dddd;
 }
 
-body {
+.app {
     margin: 0 auto;
-    width: 80%;
+    max-width: 1200px;
 }
 
 .app > * {
