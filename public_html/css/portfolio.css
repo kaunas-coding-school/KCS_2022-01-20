@@ -1,15 +1,15 @@
-.app main div {
-    --item-width: calc(100% / 5 - 32px); /* 32px nes 5px*2 puses margin + 10px *2 puses padding + 1px * 2 remelis */
-    --item-height: 150px;
-}
-
+/* Sachmatu lentos centravimas */
 .app main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Lentos langelio dizainas panaudojant CSS kintamuosius */
 .app main div {
+    --item-width: 100px; /* 32px nes 5px*2 puses margin + 10px *2 puses padding + 1px * 2 remelis */
+    --item-height: 100px;
+
     width: var(--item-width);
     height: var(--item-height);
     margin: 5px;
@@ -21,18 +21,18 @@
     font-size: 2.5vh;
 }
 
+/* Kas penkto elementas nauja eilute */
 .app main div:nth-child(5n+1) {
     clear: both;
 }
 
+/* Elementu spalvinimas */
 .app main div:nth-child(4n+2) {
     background-color: lightskyblue;
 }
-
 .app main div:nth-child(4n+4) {
     background-color: darkolivegreen;
 }
-
 .app main div:nth-child(2n+16) {
     background-color: hotpink;
 }

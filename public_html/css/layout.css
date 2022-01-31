@@ -51,3 +51,53 @@ header > nav a:last-child { /* Taikomas Twiter nuorodai psalinti zalia bruksni *
     margin-left: 0;
     padding-right: 0;
 }
+
+
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    .app  {
+        grid-template-areas:
+        "h"
+        "m"
+        "f"
+    ;
+        grid-template-rows: 50px auto 50px;
+        grid-template-columns: 1fr;
+    }
+    .app  > aside {
+        display: none;
+    }
+}
+
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+    .app  {
+        grid-template-areas:
+        "h h"
+        "m a"
+        "f f"
+    ;
+        grid-template-rows: 50px auto 50px;
+        grid-template-columns: 2fr 1fr;
+    }
+    .app  > aside {
+        display: block;
+    }
+}
+
+
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
+    .app  {
+        grid-template-areas:
+        "h h h"
+        "m m a"
+        "f f f"
+    ;
+        grid-template-rows: 50px auto 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .app  > aside {
+        display: block;
+    }
+}
