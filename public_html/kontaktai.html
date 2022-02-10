@@ -31,7 +31,7 @@
 </aside>
 
 <main>
-    <form action="http://localhost/kursiustiduomenis.php" method="POST">
+    <form id="kontaktai">
         <input name="vardas" type="text" id="fn" placeholder="Vardas">
 
         <label for="masina">Automobilis</label>
@@ -49,14 +49,16 @@
 
         <button type="button" onclick="alert('Hello World!')">Labas!</button>
 
-        <input value="Siųsti" type="submit"/>
+        <input value="Siųsti" type="button" id="sendForm"/>
 
     </form>
+    <div id="atsakymas"></div>
 </main>
 
 <footer>
     &copy;2022 Visos teises saugomos
 </footer>
-
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/kontaktai.js"></script>
 </body>
 </html>
