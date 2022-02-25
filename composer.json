@@ -1,0 +1,16 @@
+{
+    "name": "tautiz/klases_darbas",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "KCS\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tautvydas Dulskis",
+            "email": "t.dulskis@salvum.lt"
+        }
+    ],
+    "require": {}
+}

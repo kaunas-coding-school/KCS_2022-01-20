@@ -1,14 +1,18 @@
 <?php
 
-class Car
+namespace KCS\Entities;
+
+class Car implements CarInteface
 {
-    private float $currentGasolineAmount;
+    public float $currentGasolineAmount;
+
+    public int $id;
 
     public function __construct(
-        private ?string $color = '',
-        private ?string $currentSpeed = '0km/h',
-        private ?float  $millage = 20,
-        private ?int    $tankSize = 50
+        public ?string $color = '',
+        public ?string $currentSpeed = '0km/h',
+        public ?float  $millage = 20,
+        public ?int    $tankSize = 50
     ) {
         $this->currentGasolineAmount = 0;
     }
@@ -59,5 +63,15 @@ class Car
     public function getTankSize(): float
     {
         return $this->tankSize;
+    }
+
+    public function getCurrentGasolineAmount(): float
+    {
+        return $this->currentGasolineAmount;
+    }
+
+    public function getId(): int
+    {
+        return $this->id;
     }
 }
